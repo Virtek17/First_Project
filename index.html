@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Сайт верстальщика</title>    
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header__header">  
+        <h1 class="header__title">Личный сайт верстальщика</h1>
+        <img src="img/dog-solid.svg" alt="логотип сайта" width="50px">
+        <nav>
+          <ul>
+            <li><a href="#about">Обо мнe</a></li>
+            <li><a href="#articles">Мои статьи</a></li>
+            <li><a href="#feedback">Обратная связь</a></li>
+            <li><a href="index.html">На главную</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__wrapper">
+        <section id="about">
+          <h2>Обо мне!!!</h2>
+          <a href="img/avatar.jpg" download>
+            <img class="avatar" src="img/avatar.jpg" alt="аватар автора" width="200px">
+          </a>
+          <p lang="ru">Привет! Меня зовут Илья, и мне 20 лет. Я <del>был</del> являюсь <ins>студентом</ins> первого курса <storng>МИДиС</storng>, где обучаюсь на разработчика веб и мобильных приложений.<br>Этот сайт, который вы сейчас просматриваете, - мой первый опыт в создании веб-страниц с использованием HTML и CSS. Для меня это увлекательное путешествие в мир веб-разработки, и я с нетерпением жду возможности поделиться своими знаниями и опытом с вами в этом блоге.</p>
+          <p lang="ru">На этом сайте я собираюсь рассказывать о таких важных темах, как HTML и CSS - два основных языка для создания веб-страниц. Вы узнаете, как создавать красивые и функциональные веб-сайты, а также о том, как использовать различные редакторы кода для улучшения вашей продуктивности и качества кода. Следите за моими статьями и уроками, чтобы углубиться в мир веб-разработки вместе со мной. Если у вас есть вопросы, предложения или комментарии, не стесняйтесь обращаться. Давайте вместе создадим интересные и полезные проекты!</p>
+          <p><blockquote>Стив Джобс</blockquote><q>Сегодня ты делаешь код, завтра код делает тебе деньги.</q></p>
+          <p lang="en">If you're reading this, it means you know English. Very happy for you, because I don't know it :(</p>
+        </section>
+        <section id="articles">
+          <h2>Мои статьи</h2>
+          <ol>
+            <li><a href="article1.html">Что такое HTML</a></li>
+            <li><a href="article2.html">Что такое CSS</a></li>
+            <li><a href="article3.html">Топ-5 редакторов кода</a></li>
+            <li><a class="spisok" href="article4.html">Список терминов</a></li>
+            <li><a class="tth" href="article5.html">Системные требования для основных программ</a></li>
+          </ol>
+        </section>
+        
+        <section id="feedback">
+          <h2>Обратная связь</h2>
+          
+          <form action="" id="contact-form">
+            <div class="form__item">
+              <label for="topic">Тема</label><br>
+              <select name="topic" id="topic" required>
+                <option value="1">Заказать услугу</option>
+                <option value="2">Оставить отзыв/замечание</option>
+                <option value="3">Предложить сотрудничество</option>
+                <option value="4">Другое</option>
+              </select>
+            </div>
+            <div class="form__item">
+              <label for="name">Имя</label><br>
+              <input name="name" id="name" type="text" placeholder="Введите имя" required>
+            </div>
+            <div class="form__item">
+              <label for="name" >E-mail</label><br>
+              <input name="name" id="name" type="email" placeholder = "Введите ваш E-mail" required>
+            </div>
+            <div class="form__item">
+              <label for="phone">Телефон</label><br>
+              <input type="tel" id="name" name="phone" placeholder="Ваш телефон" required>
+            </div>
+            <div class="form__item">
+              <label for="date">Дата</label><br>
+              <input type="date" name="date" id="name" required>
+            </div>
+            <div class="form__item">
+              <label for="message">Текст сообщения</label><br>
+              <textarea name="message" id="message" cols="35" rows="10" placeholder = "Ваше сообщение" required></textarea>
+            </div>
+            
+            <div class="form__item">
+              <label for=""><input type="checkbox" required>Согласие на обработку данных</label><br>
+              <label for=""><input type="checkbox">Согласие на получение рассылок</label>
+
+            </div>
+            <div class="form__item_submit">
+              <input type="submit">
+            </div>
+            
+          </form>
+          
+
+        </section>
+    </div>
+    </main>
+
+    <footer>
+      <p>&copy; Твердохлеб Илья, 2023 г.</p>
+      <div class="social">
+        <span>Вы так же можете найти меня здесь:</span>
+        <a target="_blank" href="https://vk.com/u_ch_ih_a"><img class="vk" src="img/vk.svg" alt="vk"></a>
+        <a target="_blank" href="https://t.me/+PUSQ1v5NU700NjYy"><img class="tg" src="img/telegram.svg" alt="Telegram"></a>
+      </div> 
+        
+    
+      
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Что такое CSS</title>    
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+      <div class="header__header">  
+        <h1 class="header__title">Личный сайт верстальщика</h1>
+        <img src="img/dog-solid.svg" alt="логотип сайта" width="50px">
+        <nav>
+          <ul>
+            <li><a href="#about">Обо мне</a></li>
+            <li><a href="#articles">Мои статьи</a></li>
+            <li><a href="index.html">На главную</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="main__wrapper">
+        <section>
+        <h2>Что такое CSS: Каскадные таблицы стилей</h2>
+        <p>CSS, или каскадные таблицы стилей (Cascading Style Sheets), являются одним из фундаментальных инструментов веб-разработки. Это мощный инструмент, который используется для управления внешним видом и макетом веб-страниц. CSS позволяет веб-разработчикам стилизовать HTML-контент, делая его более привлекательным и пользовательски дружественным.</p>
+        </section>
+
+        <section>
+        <h3>Основы CSS</h3>
+        <p>В основе CSS лежит концепция выбора HTML-элементов и применения к ним стилей. Эти стили могут включать в себя изменение цветов, шрифтов, размеров текста, отступов, рамок и многого другого. С помощью CSS можно создать полностью уникальный дизайн для веб-страницы.</p>
+        <p>CSS работает по следующему принципу: браузер применяет стили к HTML-элементам в соответствии с указанными правилами. Если для одного и того же элемента заданы разные стили из разных источников, такие как внешний файл CSS, внутренний стиль (в теге <code>style</code>) и встроенные стили (в атрибуте <code>'style'</code> элемента), то браузер применяет стили в соответствии с каскадным приоритетом и специфичностью правил.</p>
+        </section>
+
+        <section>
+          <h3>Селекторы и свойства</h3>
+          <p>CSS использует селекторы, чтобы выбрать элементы на веб-странице, к которым будут применяться стили. Например, селектор <code>'h1'</code> выбирает все заголовки первого уровня, а селектор <code>'.class'</code> выбирает элементы с определенным классом.</p>
+          <p>После выбора элементов селектором, CSS определяет свойства, которые будут применены к этим элементам. Свойства определяют различные аспекты стиля, такие как цвет текста, размер шрифта, отступы и другие.</p>
+          <p>Пример правила CSS:</p>
+          <pre>
+            h1 {
+              <span class="green">color</span>: blue;
+              <span class="green">font-size</span>: <span class="red">24px</span>;
+              <span class="green">margin-bottom</span>: <span class="red">20px</span>;
+            }
+          </pre>
+          <p>Это правило выбирает все элементы <code>'h1'</code> и задает им синий цвет текста, размер шрифта 24 пикселя и отступ снизу в 20 пикселей.</p>
+        </section>
+
+        <section>
+          <h3>Преимущества CSS</h3>
+          <p>Использование CSS предоставляет несколько преимуществ:</p>
+          <ol>
+            <li><strong>Раздельность контента и стиля:</strong>CSS позволяет разделять содержание веб-страницы (HTML) и её стиль. Это делает код более чистым и поддерживаемым.</li>
+            <li><strong>Единообразие дизайна:</strong>CSS позволяет легко применять один и тот же стиль к нескольким элементам, обеспечивая единообразие дизайна на всем сайте.</li>
+            <li><strong>Увеличение производительности:</strong>Загрузка времени страницы уменьшается благодаря выносу стилей во внешние файлы CSS, которые браузеры могут кэшировать.</li>
+            <li><strong>Адаптивность:</strong> CSS позволяет создавать адаптивные дизайны, которые могут корректироваться для различных экранов и устройств.</li>
+          </ol>
+        </section>
+
+        <section>
+          <h3>Подключение CSS к HTML</h3>
+          <p>CSS можно подключить к HTML-странице разными способами. Один из наиболее распространенных способов - это использование внешнего файла CSS:</p>
+          <pre>
+            <code>link <span class="red">rel</span>=<span class="green">"stylesheet"</span> <span class="red">type</span>=<span class="green">"text/css"</span> <span class="red">href</span>=<span class="green">"styles.css"</span></code>
+          </pre>
+          <p>Этот код подключает файл <code>styles.css</code>, в котором содержатся стили для веб-страницы.</p>
+        </section>
+
+        <section>
+          <h3>Заключение</h3>
+          <p>В заключение, CSS - это мощный инструмент для веб-разработчиков, который позволяет создавать красочные и функциональные веб-сайты. Знание основ CSS является необходимым для создания современных и адаптивных интерфейсов в Интернете.
+          </p>
+        </section>
+      </div>
+    </main>
+    
+    <footer>
+      <p>&copy; Твердохлеб Илья, 2023 г.</p>
+      <div class="social">
+        <span>Вы так же можете найти меня здесь:</span>
+        <a target="_blank" href="https://vk.com/u_ch_ih_a"><img class="vk" src="img/vk.svg" alt="vk"></a>
+        <a target="_blank" href="https://t.me/+PUSQ1v5NU700NjYy"><img class="tg" src="img/telegram.svg" alt="Telegram"></a>
+      </div> 
+    </footer>
+  </div>
+</body>
+</html>
